@@ -9,18 +9,19 @@ import { RickMortyService } from '../rick-morty.service';
 export class HomeComponent {
   personajes:any
   constructor(private personajeService: RickMortyService) {
-     this.init()
+     //this.init()
+     this.personajes = this.personajeService.getAll()
     
       }
-      async init(){
-        try{
-          const data:any = await this.personajeService.getAll()
-          this.personajes= data.results
+      //async init(){
+        //try{
+          //const data:any = await this.personajeService.getAll()
+          //this.personajes= data.results
 
 
-        }catch (e){
-          console.log(e)
-        }
+       // }catch (e){
+         // console.log(e)
+        //}
         
-      }
+     // }
     }

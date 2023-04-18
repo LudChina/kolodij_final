@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { lastValueFrom } from 'rxjs';
+import { lastValueFrom, map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +10,7 @@ export class RickMortyService {
 
 
   getAll() {
-    return lastValueFrom(this.http.get("https://rickandmortyapi.com/api/character"))
+    return lastValueFrom(this.http.get("https://rickandmortyapi.com/api/character").pipe(map((value:any)=>value.results)))
   }
 
 
