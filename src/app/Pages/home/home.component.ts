@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RickMortyService } from '../rick-morty.service';
+import { RickMortyService } from '../../Services/rick-morty.service';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +11,7 @@ export class HomeComponent {
   constructor(private personajeService: RickMortyService) {
      //this.init()
      this.personajes = this.personajeService.getAll()
+     console.log(this.personajes)
     
       }
       //async init(){

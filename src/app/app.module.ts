@@ -5,11 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { CatalogoComponent } from './catalogo/catalogo.component';
-import { RegistroComponent } from './registro/registro.component';
-import { LoginComponent } from './login/login.component';
-import { DetalleComponent } from './detalle/detalle.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { CatalogoComponent } from './Pages/catalogo/catalogo.component';
+import { RegistroComponent } from './Pages/registro/registro.component';
+import { LoginComponent } from './Pages/login/login.component';
+import { DetalleComponent } from './Components/detalle/detalle.component';
+import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { ListadosModule } from './listados/listados.module';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,17 @@ import { DetalleComponent } from './detalle/detalle.component';
     CatalogoComponent,
     RegistroComponent,
     LoginComponent,
-    DetalleComponent
+    DetalleComponent,
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ListadosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
