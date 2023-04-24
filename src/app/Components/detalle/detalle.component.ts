@@ -16,14 +16,14 @@ export class DetalleComponent {
     private activateRoute:ActivatedRoute,
     private personajeService:RickMortyService
   ){
-    const id:Personaje = this.activateRoute.snapshot.paramMap.get("id")
+    const id:any = this.activateRoute.snapshot.paramMap.get("id")
     console.log(id)
     if(id)this.init(id)
   }
 
-  async init(id:number){
+  async init(id:any){
     try{
-     const personaje:Personaje = await this.personajeService.getById(id)
+     const personaje:any = await this.personajeService.getById(id)
      this.personaje = {...personaje}
 
     }catch(e){

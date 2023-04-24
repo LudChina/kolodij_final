@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Pages/home/home.component';
-import { CatalogoComponent } from './Pages/catalogo/catalogo.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { DetalleComponent } from './Components/detalle/detalle.component';
@@ -18,7 +17,6 @@ import { ListadosModule } from './listados/listados.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    CatalogoComponent,
     RegistroComponent,
     LoginComponent,
     DetalleComponent,

@@ -1,8 +1,8 @@
-<h1>PERSONAJES</h1>
+<h1 class="font">PERSONAJES</h1>
 <div *ngFor="let personajes of personajes | async">
-    <h3>{{personajes.name}}</h3>
-    <p>{{personajes.status}}</p>
-    <p>{{personajes.species}}</p>
+    <h3 class="font">{{personajes?.name}}</h3>
+    <p class="font">{{personajes?.status}}</p>
+    <p class="font">{{personajes?.species}}</p>
     <img src="{{personajes.image}}" alt="">
-    <button routerLink="/personaje/{{personajes.id}}">SELECCIONAR</button>
+    <button routerLink="/personaje/{{personajes.name}}">SELECCIONAR</button>
 </div>

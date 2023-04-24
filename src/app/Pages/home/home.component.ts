@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RickMortyService } from '../../Services/rick-morty.service';
+import { Personaje } from 'src/app/Interfaces/Personajes';
 
 @Component({
   selector: 'app-home',

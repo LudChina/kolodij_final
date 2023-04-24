@@ -15,7 +15,7 @@ export class RickMortyService {
   }
 
   getById(id:number) {
-    return lastValueFrom(this.http.get<Personaje>(`https://rickandmortyapi.com/api/${id}`))
+    return lastValueFrom(this.http.get<Personaje>(`https://rickandmortyapi.com/api/character/${id}`))
   }
 
 
