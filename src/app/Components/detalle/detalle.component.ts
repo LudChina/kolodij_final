@@ -9,26 +9,22 @@ import { RickMortyService } from 'src/app/Services/rick-morty.service';
   templateUrl: './detalle.component.html',
   styleUrls: ['./detalle.component.css']
 })
-export class DetalleComponent {
-  personaje!:Personaje
 
+export class DetalleComponent{
+  personaje!: Personaje
   constructor(
     private activateRoute:ActivatedRoute,
-    private personajeService:RickMortyService
-  ){
-    const id:any = this.activateRoute.snapshot.paramMap.get("id")
-    console.log(id)
-    if(id)this.init(id)
+    private rickMortyService:RickMortyService
+    ){
+      const id:any = this.activateRoute.snapshot.paramMap.get("id")
+      console.log(id)
+      if(id)this.init(id)
   }
-
   async init(id:any){
     try{
-     const personaje:any = await this.personajeService.getById(id)
-     this.personaje = {...personaje}
-
+       this.personaje = await this.rickMortyService.getById(id)
     }catch(e){
-      console.log(e)
-    }
+    console.log(e)
   }
-
+}
 }

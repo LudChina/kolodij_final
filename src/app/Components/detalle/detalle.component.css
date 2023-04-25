@@ -1,0 +1,20 @@
+.font{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.info{
+        display: grid;
+        grid-template-columns: max-content;
+        padding: 10px;
+        margin-left: 300px;
+
+}
+
+button{
+    background-color: rgb(28, 190, 28);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}

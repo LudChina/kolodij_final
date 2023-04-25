@@ -1,6 +1,18 @@
+.info{
+    display: grid;
+    float: left;
+    grid-template-columns: max-content;
+    padding: 10px;
+    margin: 5px;
+}
+
 .font{
     font-family: 'Courier New', Courier, monospace;
     color: black;
+}
+
+h1{
+    text-align: center;
 }
 
 button{

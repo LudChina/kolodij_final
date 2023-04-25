@@ -1,5 +1,5 @@
 export interface Personaje{
-    id:number,
+    id:number | string,
     name:string,
     gender:string,
     location:{
@@ -8,4 +8,5 @@ export interface Personaje{
     }
     species:string,
     status:string
+    image:string
 }

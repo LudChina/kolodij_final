@@ -1,3 +1,19 @@
+.registro{
+    text-align: center;
+    margin-top: 20px;
+}
+.formulario{
+    padding: 10px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+.user{
+    padding: 5px;
+}
+ input{
+    display: grid;
+    grid-row: auto;
+ }
 .font{
     font-family: 'Courier New', Courier, monospace;
     color: black;
@@ -9,4 +25,5 @@ button{
     font-weight: bold;
     padding: 5px;
     cursor: pointer;
+    margin-left: 400px;
 }
