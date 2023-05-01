@@ -2,10 +2,10 @@
     text-align: center;
     margin-top: 20px;
 }
-.formulario{
-    padding: 10px;
-    margin-left: 350px;
-    margin-top: 50px;
+div.user{
+    display: flex;
+    justify-content: center;
+    margin:  auto;
 }
 .user{
     padding: 5px;
@@ -20,10 +20,11 @@
 }
 
 button{
+    display: flex;
+    margin: auto;
     background-color: rgb(28, 190, 28);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding: 5px;
     cursor: pointer;
-    margin-left: 400px;
 }

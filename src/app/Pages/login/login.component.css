@@ -1,8 +1,8 @@
-.formulario{
+/*.formulario{
     padding: 10px;
     margin-left: 350px;
     margin-top: 100px;
-}
+}*/
 
 input{
     display: grid;
@@ -14,14 +14,16 @@ input{
     color: black;
 }
 div.login{
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: 15px;
 }
 button{
+    display: flex;
+    margin: auto;
     background-color: rgb(28, 190, 28);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-left: 60px;
     padding: 5px;
     cursor: pointer;
 }

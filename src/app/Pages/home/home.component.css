@@ -3,7 +3,7 @@
     float: left;
     grid-template-columns: max-content;
     padding: 10px;
-    margin: 5px;
+    margin: 0, auto;
 }
 
 .font{
@@ -15,10 +15,3 @@ h1{
     text-align: center;
 }
 
-button{
-    background-color: rgb(28, 190, 28);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    padding: 5px;
-    cursor: pointer;
-}

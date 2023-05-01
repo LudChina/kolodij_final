@@ -1,9 +1,10 @@
-ul{
+.navBar{
     background-color: rgb(28, 190, 28);
     padding: 15px;
+    display: flex;
 }
 
-li{
+link{
     display: inline;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;

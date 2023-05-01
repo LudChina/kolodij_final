@@ -12,6 +12,11 @@ import { DetalleComponent } from './Components/detalle/detalle.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ListadosModule } from './listados/listados.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PersonajeComponent } from './Components/personaje/personaje.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,8 @@ import { ListadosModule } from './listados/listados.module';
     LoginComponent,
     DetalleComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    PersonajeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,11 @@ import { ListadosModule } from './listados/listados.module';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    ListadosModule
+    ListadosModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
